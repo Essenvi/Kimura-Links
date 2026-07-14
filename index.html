@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kimura Links</title>
+
+    <!-- ─── RASTREADOR DA UMAMI ─── -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="4bcd9cbe-ed04-4180-a201-c72c87f8ef77"></script>
+
     <style>
         * {
             margin: 0;
@@ -215,6 +219,7 @@
         .whatsapp { color: #25D366; }
         .telegram { color: #0088cc; }
         .stripchat { color: #0088cc; }
+        
         /* RESPONSIVO */
         @media (max-width: 768px) {
             .header {
@@ -261,11 +266,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- HEADER COM FOTO DE FUNDO -->
-    <div class="header"
-                 alt="Selina" 
-                 class="profile-pic">
-            <div class="name"></div>
+    <!-- HEADER COM FOTO DE PERFIL E NOME AJUSTADOS -->
+    <div class="header">
+        <div class="profile-container">
+            <img src="https://i.postimg.cc/VNknyztg/IMG-6418.jpg" alt="Morgana Kimura" class="profile-pic">
+            <div class="name">Morgana Kimura</div>
         </div>
     </div>
     
@@ -273,8 +278,8 @@
     <div class="top-logos">
         <!-- STRIPCHAT -->
         <div class="logo-item" onclick="window.open('https://pt.stripchat.com/Morgankimura?utm_source=bot&utm_medium=notifyOnline&utm_campaign=6a294201c2bd2deeb69d5f4a&utm_term=SC-Telegram-Notify-Online&utm_platform=1&utm_variation=5', '_blank')">
-            <div class="logo-icon telegram">
-                <img src="https://i.imgur.com/J9ge2Vj.png"></i>
+            <div class="logo-icon">
+                <img src="https://i.imgur.com/J9ge2Vj.png" alt="Stripchat">
             </div>
             <div class="logo-name">Stripchat</div>
         </div>
@@ -316,36 +321,37 @@
     <div class="gallery">
         <!-- Stripchat -->
         <div class="photo-card">
-    <div class="photo-container">
-        <a href="https://pt.stripchat.com/Morgankimura?utm_source=bot&utm_medium=notifyOnline&utm_campaign=6a294201c2bd2deeb69d5f4a&utm_term=SC-Telegram-Notify-Online&utm_platform=1&utm_variation=5" 
-           target="_blank" 
-           class="photo-link">
-            <img src="https://i.imgur.com/RNSraWW.jpeg" 
-                 alt="Instagram"
-                 style="object-position: center 90%;">
-        </a>
-        <div class="photo-logo instagram">
-            <img src="https://i.imgur.com/J9ge2Vj.png"></i>
+            <div class="photo-container">
+                <a href="https://pt.stripchat.com/Morgankimura?utm_source=bot&utm_medium=notifyOnline&utm_campaign=6a294201c2bd2deeb69d5f4a&utm_term=SC-Telegram-Notify-Online&utm_platform=1&utm_variation=5" 
+                   target="_blank" 
+                   class="photo-link">
+                    <img src="https://i.imgur.com/RNSraWW.jpeg" 
+                         alt="Stripchat"
+                         style="object-position: center 90%;">
+                </a>
+                <div class="photo-logo">
+                    <img src="https://i.imgur.com/J9ge2Vj.png" alt="Stripchat logo" style="width: 20px; height: 20px; object-fit: contain;">
+                </div>
+                <div class="platform-name">Stripchat</div>
+            </div>
         </div>
-        <div class="platform-name">Stripchat</div>
-    </div>
-</div>
+
         <!-- INSTAGRAM -->
-<div class="photo-card">
-    <div class="photo-container">
-        <a href="https://www.instagram.com/morganakimura?igsh=M3lscTdjbmgzZWc3" 
-           target="_blank" 
-           class="photo-link">
-            <img src="https://i.postimg.cc/VNknyztg/IMG-6418.jpg" 
-                 alt="Instagram"
-                 style="object-position: center 70%;">
-        </a>
-        <div class="photo-logo instagram">
-            <i class="fab fa-instagram"></i>
+        <div class="photo-card">
+            <div class="photo-container">
+                <a href="https://www.instagram.com/morganakimura?igsh=M3lscTdjbmgzZWc3" 
+                   target="_blank" 
+                   class="photo-link">
+                    <img src="https://i.postimg.cc/VNknyztg/IMG-6418.jpg" 
+                         alt="Instagram"
+                         style="object-position: center 70%;">
+                </a>
+                <div class="photo-logo instagram">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="platform-name">Instagram</div>
+            </div>
         </div>
-        <div class="platform-name">Instagram</div>
-    </div>
-</div>
         
         <!-- TELEGRAM -->
         <div class="photo-card">
@@ -393,6 +399,7 @@
                 <div class="platform-name">WhatsApp</div>
             </div>
         </div>
+    </div>
 
     <script>
         // Todos os links já estão funcionando via onclick e href
