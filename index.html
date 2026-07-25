@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xs0sdhi1tv");
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kimura Links</title>
-
-    <!-- ─── SEU RASTREADOR DO UMAMI ─── -->
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="4bcd9cbe-ed04-4180-a201-c72c87f8ef77"></script>
-
     <style>
         * {
             margin: 0;
@@ -70,6 +73,8 @@
         
         .logo-item {
             text-align: center;
+            text-decoration: none;
+            color: inherit;
             cursor: pointer;
             transition: all 0.3s ease;
         }
@@ -219,7 +224,7 @@
         .whatsapp { color: #25D366; }
         .telegram { color: #0088cc; }
         .stripchat { color: #0088cc; }
-        
+
         /* RESPONSIVO */
         @media (max-width: 768px) {
             .header {
@@ -267,9 +272,8 @@
 </head>
 <body>
     <!-- HEADER COM FOTO DE FUNDO -->
-    <div class="header"
-                 alt="Selina" 
-                 class="profile-pic">
+    <div class="header">
+        <div class="profile-container">
             <div class="name"></div>
         </div>
     </div>
@@ -277,44 +281,44 @@
     <!-- LOGOS NO TOPO - 5 PLATAFORMAS -->
     <div class="top-logos">
         <!-- STRIPCHAT -->
-        <div class="logo-item" onclick="window.open('https://pt.stripchat.com/Morgankimura?utm_source=bot&utm_medium=notifyOnline&utm_campaign=6a294201c2bd2deeb69d5f4a&utm_term=SC-Telegram-Notify-Online&utm_platform=1&utm_variation=5', '_blank')">
+        <a class="logo-item" href="https://pt.stripchat.com/Morgankimura?utm_source=bot&utm_medium=notifyOnline&utm_campaign=6a294201c2bd2deeb69d5f4a&utm_term=SC-Telegram-Notify-Online&utm_platform=1&utm_variation=5" target="_blank">
             <div class="logo-icon telegram">
-                <img src="https://i.imgur.com/J9ge2Vj.png"></i>
+                <img src="https://i.imgur.com/J9ge2Vj.png">
             </div>
             <div class="logo-name">Stripchat</div>
-        </div>
+        </a>
         
         <!-- TELEGRAM -->
-        <div class="logo-item" onclick="window.open('https://telegram.me/SelinaSalvatoreBot', '_blank')">
+        <a class="logo-item" href="https://t.me/SelinaSalvatoreBot" target="_blank">
             <div class="logo-icon telegram">
                 <i class="fab fa-telegram"></i>
             </div>
             <div class="logo-name">Tele VIP</div>
-        </div>
+        </a>
         
         <!-- WHATSAPP -->
-        <div class="logo-item" onclick="window.open('https://wa.me/message/XM42I2EBYJMJA1', '_blank')">
+        <a class="logo-item" href="https://wa.me/message/XM42I2EBYJMJA1" target="_blank">
             <div class="logo-icon whatsapp">
                 <i class="fab fa-whatsapp"></i>
             </div>
             <div class="logo-name">WhatsApp</div>
-        </div>
+        </a>
         
         <!-- TWITTER -->
-        <div class="logo-item" onclick="window.open('https://x.com/morganakimura?s=11', '_blank')">
+        <a class="logo-item" href="https://x.com/morganakimura?s=11" target="_blank">
             <div class="logo-icon twitter">
                 <i class="fab fa-twitter"></i>
             </div>
             <div class="logo-name">Twitter</div>
-        </div>
+        </a>
         
         <!-- INSTAGRAM -->
-        <div class="logo-item" onclick="window.open('https://www.instagram.com/morganakimura?igsh=M3lscTdjbmgzZWc3', '_blank')">
+        <a class="logo-item" href="https://www.instagram.com/morganakimura?igsh=M3lscTdjbmgzZWc3" target="_blank">
             <div class="logo-icon instagram">
                 <i class="fab fa-instagram"></i>
             </div>
             <div class="logo-name">Instagram</div>
-        </div>
+        </a>
     </div>
 
     <!-- GALERIA DE FOTOS - 5 PLATAFORMAS -->
@@ -326,16 +330,16 @@
                    target="_blank" 
                    class="photo-link">
                     <img src="https://i.imgur.com/RNSraWW.jpeg" 
-                         alt="Instagram"
+                         alt="Stripchat"
                          style="object-position: center 90%;">
                 </a>
                 <div class="photo-logo instagram">
-                    <img src="https://i.imgur.com/J9ge2Vj.png"></i>
+                    <img src="https://i.imgur.com/J9ge2Vj.png">
                 </div>
                 <div class="platform-name">Stripchat</div>
             </div>
         </div>
-        
+
         <!-- INSTAGRAM -->
         <div class="photo-card">
             <div class="photo-container">
@@ -356,12 +360,12 @@
         <!-- TELEGRAM -->
         <div class="photo-card">
             <div class="photo-container">
-                <a href="https://telegram.me/SelinaSalvatoreBot" 
+                <a href="https://t.me/SelinaSalvatoreBot" 
                    target="_blank" 
                    class="photo-link">
                     <img src="https://i.imgur.com/Fv4PX4K.jpeg"
-                    alt="Telegram"
-                    style="object-position: center 80%;">
+                         alt="Telegram"
+                         style="object-position: center 80%;">
                 </a>
                 <div class="photo-logo telegram">
                     <i class="fab fa-telegram"></i>
@@ -400,9 +404,5 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // Todos os links já estão funcionando via onclick e href
-    </script>
 </body>
 </html>
