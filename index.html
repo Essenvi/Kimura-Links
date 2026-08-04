@@ -224,6 +224,15 @@
         .whatsapp { color: #25D366; }
         .telegram { color: #0088cc; }
         .stripchat { color: #0088cc; }
+        .privacy { color: #ffffff; }
+    
+    @keyframes pulsoLaranja {
+            0% { border-color: rgba(255, 107, 0, 0.2); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+            50% { border-color: #ff6b00; box-shadow: 0 0 20px #ff6b00, 0 0 40px #ff8c00; }
+            100% { border-color: rgba(255, 107, 0, 0.2); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        }
+        .piscando { animation: pulsoLaranja 2s infinite ease-in-out; }
+        
 
         /* RESPONSIVO */
         @media (max-width: 768px) {
@@ -280,6 +289,11 @@
     
     <!-- LOGOS NO TOPO - 5 PLATAFORMAS -->
     <div class="top-logos">
+        <!-- privacy -->
+        <a class="logo-item" href="https://privacy.com.br/@Morganakimura" target="_blank">
+            <div class="logo-icon bg-privacy"><img src="https://i.imgur.com/3eyn7gr.png"></div>
+            <div class="logo-name">Privacy</div>
+        </a>
         <!-- STRIPCHAT -->
         <a class="logo-item" href="https://pt.stripchat.com/Morgankimura?utm_source=bot&utm_medium=notifyOnline&utm_campaign=6a294201c2bd2deeb69d5f4a&utm_term=SC-Telegram-Notify-Online&utm_platform=1&utm_variation=5" target="_blank">
             <div class="logo-icon telegram">
@@ -323,6 +337,17 @@
 
     <!-- GALERIA DE FOTOS - 5 PLATAFORMAS -->
     <div class="gallery">
+        <!-- PRIVACY -->
+        <div class="photo-card piscando">
+            <div class="photo-container">
+                <a href="https://privacy.com.br/@Morganakimura" target="_blank">
+                    <img src="https://i.postimg.cc/R0BCg4WX/IMG-3983.jpg" alt="Privacy">
+                </a>
+                <div class="photo-logo bg-privacy"><img src="https://i.imgur.com/3eyn7gr.png"></div>
+                <div class="platform-name">Privacy</div>
+            </div>
+        </div>
+        
         <!-- Stripchat -->
         <div class="photo-card">
             <div class="photo-container">
